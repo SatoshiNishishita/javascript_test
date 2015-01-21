@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--IEで表示した時にレイアウトが崩れないようにする-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>イベントID属性</title>
+
+<!--Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--スマートフォンなどでブラウザいっぱいに画面幅を合わせる-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<p class="btn">
+<input id="btnClose" type="button" value="閉じる">
+</p>
+<script type="text/javascript">
+document.getElementById('btnClose').onclick = function(){
+	if(confirm('閉じてもよろしいですか?')){
+		window.close();
+	}else{
+		alert('閉じるのを中止しました');
+	}
+}
+</script >
+
+
+<script src="https://code.jquery.com/jquery.js"></script >
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script >
+</body>
+</html>
