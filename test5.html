@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--IEで表示した時にレイアウトが崩れないようにする-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>ドロップダウン</title>
+
+<!--Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--スマートフォンなどでブラウザいっぱいに画面幅を合わせる-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+<select name="age">
+<script type="text/javascript">
+var i = 10;
+while(i<=70){
+	document.write('<option value="' + i + '">' + i + '歳</option>')
+	i++;
+}
+</script>
+</select>
+
+
+<script src="https://code.jquery.com/jquery.js"></script >
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
