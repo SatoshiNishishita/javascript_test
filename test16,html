@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--IEで表示した時にレイアウトが崩れないようにする-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title></title>
+
+<!--Bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--スマートフォンなどでブラウザいっぱいに画面幅を合わせる-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<h2>年齢</h2>
+<select id="age" name="age">
+	<option value="">お選び下さい</option>
+	<option value ="10">10歳以下</option>
+	<option valule="30">11-30歳</option>
+	<option value="50">31-50歳</option>
+	<option value="51">51歳以上</option>
+</select>
+
+
+<script src="https://code.jquery.com/jquery.js"></script >
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script >
+
+<script type="text/javascript">
+document.getElementById('age').onchange = function(){
+	var age = document.getElementById('age').value;
+	
+	switch(age){
+		case '10' :
+			alert('10歳以下の方は半額です');
+			break;
+		case '30' :
+			alert('11-30歳の方は割引はありません');
+			break;
+		case '50' :
+			alert('31-50歳の方は割引はありません')
+		case '51' :
+			alert('51歳以上の方は30%オフです');
+			break; 
+	}
+}
+</script>
+</body>
+</html>
